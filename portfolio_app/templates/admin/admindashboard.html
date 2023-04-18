@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard - Yemi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/open-iconic-bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/aos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/ionicons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/icomoon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/admin.css')}}">
+
+<body>
+    <div class="d-flex" id="wrapper">
+        
+        <div class="bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom" style="color: #008753;">
+                <img src="../static/images/logo/logo_black.svg" alt="site logo"width="140" height="100" class="admindashboard "/>
+            </div>
+
+           {% include "admin/menu.html"%}
+          
+        </div>
+
+
+       
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    <h2 class="fs-2 mt-4">Dashboard</h2>
+                </div>
+            </nav>
+
+            <div class="container-fluid px-4">
+                <div class="row g-3 my-2" style="color: #008753;">
+                    <div class="col-md-12">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h3 class="btn-warning text-white">Pending</h3>
+                                <table class="table table-responsive table-striped table-hover">
+                                    {%if mdeets%}
+                                    <tr>
+                                    <th>S/N</th>
+                                    <th>Name</th>
+                                    <th>Subject</th>
+                                    <th>Message</th>
+                                    <th>Date Posted</th>
+                                    <th>Admin Comment</th>
+                                    </tr>
+                                    {% for m  in mdeets %}
+        <tr>
+            <td class="text-small">{{ loop.index }}</td>
+            <td class="text-small text-blue"><strong>{{ m.msg_username }}</strong></td>
+            <td class="text-small">{{ m.msg_subject }}</td>
+            <td class="text-small">{{ m.msg_content }}</td>
+            <td class="text-small">{{ m.msg_date }}</td>
+            <td>
+                    <a href={{ url_for('work_on_it', user=m.msg_id)}} type="submit" class="btn btn-primary py-2 px-5">Work on it</a>
+            </td>
+            <td><a <a href="{{url_for("delete", id=m.msg_id)}}" class="btn btn-outline-warning py-2 px-5" onclick="return confirm('Do you really want to delete this item?')">Delete Message</a></td>
+                    
+    {% endfor %} 
+    {% else %}
+    <div >
+        <p>You have no pending entries. Please check back later.</p>
+    </div>
+    {%endif%}
+</tr>
+   
+                                </table>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                    
+            
+        </div>
+    </div>
+    
+   
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/glm-ajax.js') }}"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+</body>
+
+</html>

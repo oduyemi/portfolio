@@ -1,0 +1,16 @@
+<div class="list-group list-group-flush my-3">
+    <a href="/admin/dashboard" class="list-group-item list-group-item-action bg-warning second-text active">
+        <i class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+
+    <a href="/admin/email_purse" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+        <i class="fa-sharp fa-solid fa-eye"></i> Email Purse </a>
+
+    <a href="{{url_for('in_view')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+        <i class="fa-solid fa-thumbs-up"></i> Messages in View</a>
+
+    <a href="{{url_for("sorted")}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+        <i class="fa-sharp fa-solid fa-comments"></i> Messages Sorted</a>
+
+    <a href="{{url_for("adminlogout")}}" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold">
+        <i class="fa-sharp fa-solid fa-power-off"></i> Logout</a>
+</div>

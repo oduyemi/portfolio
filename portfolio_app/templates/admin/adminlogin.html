@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Login - Yemi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/open-iconic-bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/aos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/ionicons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/icomoon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/form.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <style>
+      .form_box{
+        background-color: #000000 !important;
+      }
+   
+    </style>
+
+</head>
+<body>
+    <div class="container-fluid form_box">
+        <form method="post" action="">
+        <div class="card">
+            <input type="checkbox" id="chk" aria-hidden="true" name="">
+            <div class="content">
+                <div class="front">
+                    <div class="inner">
+                        <legend class="text-center border-bottom mb-4">Log in</legend>
+                        {{ form.csrf_token }}
+                        
+
+                        {% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+  {% for category, message in messages %}
+    <div class="alert alert-{{ category }}">
+      {{ message }}
+  {% endfor %}
+{% endif %}
+
+{% endwith %}
+                        <div class="txt_field form-group">
+
+                            {% if form.username.errors %}
+                              {{ form.username (class="is_invalid") }}
+                                <div class="invalid-feedback">
+                                  {% for error in form.username.errors %}
+                                  <span>{{ error }}</span>
+                                  {% endfor %}
+                                </div>
+                            </div>
+                            {% else %}
+                              {{ form.username }}
+                            {% endif %}
+                  
+                          </div>
+                          <div class="txt_field form-group">
+
+                            {% if form.password.errors %}
+                              {{ form.password (class="is_invalid") }}
+                                <div class="invalid-feedback">
+                                  {% for error in form.password.errors %}
+                                  <span>{{ error }}</span>
+                                  {% endfor %}
+                                </div>
+                            </div>
+                            {% else %}
+                              {{ form.password }}
+                            {% endif %}
+                  
+                          </div>
+                        <label for="chk" aria-hidden="true">Forget Password?</label>
+                        {{ form.submit (class="btn btn-primary py-3 px-5")}}
+                        <div class="formlink">
+                            <span class="ms-5">Not an admin? <a href="{{url_for("home")}}">Click Here</a></span>
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
