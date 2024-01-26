@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Yemi - Frontend Developer</title>
+    <title>Yemi - Fullstack Developer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -21,22 +21,23 @@
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand _logo" href="index.html"><img src="static/images/logo/logo_white.svg" width="30%" alt=""></a>
+	      <a class="navbar-brand _logo" href="/"><img src="static/images/logo/logo_white.svg" width="30%" alt=""></a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#projects" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#blog" class="nav-link">Blog<span></span></a></li>
-	          <li class="nav-item"><a href="#contact" class="nav-link"><span>Contact</span></a></li>
+	          <li class="nav-item"><a href="/" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="./#about" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="./#projects" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="./#blog" class="nav-link">Blog<span></span></a></li>
+	          <li class="nav-item"><a href="./#contact" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
+	  {% block hero %}
 	  <section id="home" class="hero">
 		  <div class="home-slider  owl-carousel">
 	      <div class="slider-item ">
@@ -66,14 +67,15 @@
 		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading">Hello there!</span>
-			            <h1 class="mb-4 mt-3">I am Yẹmi <span>Frontend Developer</span></h1>
+			            <h1 class="mb-4 mt-3">I am Yẹmi <span>Fullstack Developer</span></h1>
 		          </div>
 	        	</div>
 	        </div>
 	      </div>
 	    </div>
     </section>
-
+	{% endblock %}
+	{% block content %}
     <section class="ftco-about img ftco-section ftco-no-pb" id="about">
     	<div class="container">
     		<div class="row d-flex">
@@ -87,21 +89,38 @@
     			<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
     				<div class="row justify-content-start pb-3">
 		          <div class="col-md-12 heading-section ftco-animate">
+		          	<h1 class="big">About</h1>
 		            <h2 class="mb-4">About Me</h2>
-		            <p>I am a frontend engineer, passionate about digital products that help people experience everyday life, not endure it. I have experience in software development using industry-level languages and frameworks. I have worked on projects in various industries including Tourism, Education, E-Commerce. I am driven to solve problems through intense research-driven processes that turn business innovations into practical solutions through development.
+		            <p>
+		                As a seasoned and approachable fullstack engineer, I am
+		                passionate about crafting digital products that enhance
+		                everyday life, not just endure it. With my extensive
+		                experience in software development using industry-level
+		                languages and frameworks, I have had the privilege of
+		                working on diverse projects spanning various industries
+		                such as Tourism, Education, and E-Commerce, Procurement.
+		                <br><br>
+                        My approach to problem-solving is rooted in an intense
+                        research-driven process, where I diligently investigate
+                        every aspect of the challenge at hand. This enables me
+                        to develop practical solutions that transform business
+                        innovations into reality through the power of development.
+                        So, whether you're looking to build a new product from
+                        scratch or improve an existing one, you can count on my
+                        expertise to help you achieve your goals.
 					</p>
 		          </div>
 		        </div>
-	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
-              <div class="text">
-              	<div class="mb-4">
-					<video class="big" width="300" height="200" autoplay muted loop>
-						<source src="static/video/preloader.mp4" type="video/mp4">
-						Your browser does not support video element
-					  </video>
-					</div>
-              </div>
-	          </div>
+	    <!--      <div class="counter-wrap ftco-animate d-flex mt-md-3">-->
+     <!--         <div class="text">-->
+     <!--         	<div class="mb-4">-->
+					<!--<video class="big" width="300" height="200" autoplay muted loop>-->
+					<!--	<source src="static/video/preloader.mp4" type="video/mp4">-->
+					<!--	Your browser does not support video element-->
+					<!--  </video>-->
+					<!--</div>-->
+     <!--         </div>-->
+	    <!--      </div>-->
 	        </div>
         </div>
     	</div>
@@ -118,37 +137,37 @@
         </div>
     		<div class="row">
     			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(static/images/folio_content/abecole.jpg);">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(static/images/folio_content/ere.jpg);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
-	    					<h3><a href="www.github.com/oduyemi/abrahamcole">Abraham Cole</a></h3>
+	    					<h3><a href="https://www.erekere.com" target="_blank">Erekere</a></h3>
 	    					<span>Web Application</span>
 	    				</div>
     				</div>
   				</div>
   				<div class="col-md-8">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(static/images/folio_content/ere.jpg);">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(static/images/folio_content/churches1.jpg);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
-	    					<h3><a href="www.github.com/oduyemi/erekere">Erekere</a></h3>
-	    					<span>Web Application</span>
+	    					<h3><a href="https://thechurchesonline.vercel.app" target="_blank">The Churches Online</a></h3>
+	    					<span>Religious Platform</span>
 	    				</div>
     				</div>
   				</div>
 
     			<div class="col-md-8">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(static/images/folio_content/funds.png);">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(static/images/folio_content/tees.jpg);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
-	    					<h3><a href="www.github.com/oduyemi/funds">Funds</a></h3>
-	    					<span>Web Application</span>
+	    					<h3><a href="https://www.thesrluxuries.com" target="_blank">Native Soups</a></h3>
+	    					<span>Food Tech</span>
 	    				</div>
     				</div>
 
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(static/images/folio_content/bb.png);">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(static/images/folio_content/soups.jpg);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
-	    					<h3><a href="www.urbizedge.com">UrBizEdge</a></h3>
+	    					<h3><a href="https://www.nativesoups.vercel.app" target="_blank">Native Soups</a></h3>
 	    					<span>Web Application</span>
 	    				</div>
     				</div>
@@ -156,25 +175,29 @@
     			<div class="col-md-4">
     				<div class="row">
     					<div class="col-md-12">
-		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(static/images/folio_content/bh.jpg);">
+		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(static/images/folio_content/analysis.jpg);">
 		    					<div class="overlay"></div>
 			    				<div class="text text-center p-4">
-			    					<h3><a href="analysis.ng">Analysis NG</a></h3>
+			    					<h3><a href="https://analysis.ng" target="_blank">UrBizEdge</a></h3>
 			    					<span>Website</span>
 			    				</div>
 		    				</div>
 	    				</div>
 	    				<div class="col-md-12">
-		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(static/images/folio_content/bc.png);">
+		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(static/images/folio_content/urb.jpg);">
 		    					<div class="overlay"></div>
 			    				<div class="text text-center p-4">
-			    					<h3><a href="rufaddasmedicalsupplies.com">Rufaddas Medical</a></h3>
-			    					<span>Website</span>
+			    					<h3><a href="https://urbizedge.com">UrBizEdge</a></h3>
+			    					<span>Medical Supplies</span>
 			    				</div>
 		    				</div>
 	    				</div>
     				</div>
     			</div>
+				<div class="mx-auto mt-3">
+				<a href="/projects" class="btn btn-primary py-3 px-5">View More</a>
+
+			</div>
     		</div>
     	</div>
     </section>
@@ -192,7 +215,7 @@
 				<div class="row">
 					<div class="col-md-6 animate-box">
 						<div class="progress-wrap ftco-animate">
-							<h3>Python/Flask</h3>
+							<h3>Python</h3>
 							<div class="progress">
 							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
@@ -202,9 +225,49 @@
 					</div>
 					<div class="col-md-6 animate-box">
 						<div class="progress-wrap ftco-animate">
-							<h3>javascript/React JS</h3>
+							<h3>Node Js</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>TypeScript/JavaScript</h3>
 							<div class="progress">
 							 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>REST API</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>React</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="82"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:82%">
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>Next JS</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
 							  	</div>
 							</div>
@@ -234,8 +297,8 @@
 						<div class="progress-wrap ftco-animate">
 							<h3>WordPress</h3>
 							<div class="progress">
-							 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
+							 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="80"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
 							  	</div>
 							</div>
 						</div>
@@ -268,57 +331,96 @@
           </div>
         </div>
         <div class="row d-flex">
+            <div class="col-md-4 d-flex ftco-animate">
+            	<div class="blog-entry justify-content-end">
+              <a href="https://oduyemi.hashnode.dev/web-development-basics-explaining-the-fundamentals-of-web-development-including-html-css-and-javascript"
+              target="_blank" class="block-20" style="background-image: url('static/images/web.png');"></a>
+              <div class="text mt-3 float-right d-block">
+              	<div class="d-flex align-items-center mb-3 meta">
+	                <p class="mb-0">
+	                	<span class="mr-2">June 20, 2023</span>
+	                	<a href="#" class="mr-2" target="_blank">Yemi</a>
+	                	<a href="#" class="meta-chat" target="_blank"><span class="icon-heart"></span> </a>
+	                </p>
+                </div>
+                <h3 class="heading"><a href="https://oduyemi.hashnode.dev/introduction-to-programming-languages-a-comparison-of-popular-programming-languages-like-python-javascript-and-java"
+                target="_blank">Web Development Basics: Explaining the fundamentals of web development, including HTML, CSS, and JavaScript</a></h3>
+                <p>If you were new to this space, you would probably describe the term web development as web design...or maybe its older sibling.
+                    In a way, you might have a point. After all, there's been a long history of sibling rivalry between designers and develope...
+                </p>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-4 d-flex ftco-animate">
+            	<div class="blog-entry justify-content-end">
+              <a href="https://oduyemi.hashnode.dev/introduction-to-programming-languages-a-comparison-of-popular-programming-languages-like-python-javascript-and-java"
+              target="_blank" class="block-20" style="background-image: url('static/images/intro.jpg');"></a>
+              <div class="text mt-3 float-right d-block">
+              	<div class="d-flex align-items-center mb-3 meta">
+	                <p class="mb-0">
+	                	<span class="mr-2">May 29, 2023</span>
+	                	<a href="#" class="mr-2" target="_blank">Yemi</a>
+	                	<a href="#" class="meta-chat" target="_blank"><span class="icon-heart"></span> 10</a>
+	                </p>
+                </div>
+                <h3 class="heading"><a href="https://hopyrane.hashnode.dev/introduction-to-programming-languages-a-comparison-of-popular-programming-languages-like-python-javascript-and-java"
+                target="_blank">Introduction to Programming Languages: A comparison of popular programming languages like Python, JavaScript, and Java</a></h3>
+                <p>So, you've decided to embark on the journey of programming? You've probably encountered some bumps along the way and realized there's a vast world waiting to be explored. Questions like: <br>
+                Where do I start?...</p>
+              </div>
+            </div>
+          </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="www.hopyrane.hashnode.dev/building-modern-website-design-trends-in-2022" class="block-20" style="background-image: url('static/images/zXWbjBToO.avif');">
-              </a>
+              <a href="https://www.oduyemi.hashnode.dev/building-modern-website-design-trends-in-2022" class="block-20" target="_blank"
+              style="background-image: url('static/images/zXWbjBToO.avif');"></a>
               <div class="text mt-3 float-right d-block">
               	<div class="d-flex align-items-center mb-3 meta">
 	                <p class="mb-0">
 	                	<span class="mr-2">May 10, 2022</span>
-	                	<a href="#" class="mr-2">Yemi</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                	<a href="#" class="mr-2" target="_blank">Yemi</a>
+	                	<a href="#" class="meta-chat" target="_blank"><span class="icon-heart"></span> 19</a>
 	                </p>
                 </div>
-                <h3 class="heading"><a href="www.hopyrane.hashnode.dev/building-modern-website-design-trends-in-2022">Building Modern Website Design Trends in 2022</a></h3>
+                <h3 class="heading"><a href="https://www.oduyemi.hashnode.dev/building-modern-website-design-trends-in-2022" target="_blank">Building Modern Website Design Trends in 2022</a></h3>
                 <p>Research conducted by the University of Surrey shows that the design of a website influences 75% of user judgments about its business credibility. It takes about 3.42 seconds for these visitors to make their judgments. What this means is pretty simply...</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="www.hopyrane.hashnode.dev/ai-generated-marketing-content" class="block-20" style="background-image: url('static/images/fwrDBrZr3.avif');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">May 07, 2022</span>
-	                	<a href="#" class="mr-2">Yemi</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-                <h3 class="heading"><a href="www.hopyrane.hashnode.dev/ai-generated-marketing-content">The Future of the Web is Marketing Copy Generated by Algorithms</a></h3>
-                <p>It is safe to say that we have arrived at the point where more areas of our lives are being controlled by algorithms. It is no secret that digital marketing is becoming increasingly dependent on these algorithms for effective copywriting.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="www.hopyrane.hashnode.dev/web-development-roles-for-beginners" class="block-20" style="background-image: url('static/images/OOwDlqkso.avif');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">May 06, 2022</span>
-	                	<a href="#" class="mr-2">Yemi</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-                <h3 class="heading"><a href="www.hopyrane.hashnode.dev/web-development-roles-for-beginners">Web Development Roles for Beginners</a></h3>
-                <p>Being a web developer is one of the most interesting career paths. Especially when you have a background in computer science. Why? Because it is a fine blend of analytical and technical skills and creative design and development. However,...</p>
-              </div>
-            </div>
-          </div>
+          <!--<div class="col-md-4 d-flex ftco-animate">-->
+          <!--	<div class="blog-entry justify-content-end">-->
+          <!--    <a href="https://www.oduyemi.hashnode.dev/ai-generated-marketing-content" target="_blank" class="block-20" style="background-image: url('static/images/fwrDBrZr3.avif');">-->
+          <!--    </a>-->
+          <!--    <div class="text mt-3 float-right d-block">-->
+          <!--    	<div class="d-flex align-items-center mb-3 meta">-->
+	         <!--       <p class="mb-0">-->
+	         <!--       	<span class="mr-2">May 07, 2022</span>-->
+	         <!--       	<a href="#" class="mr-2" target="_blank">Yemi</a>-->
+	         <!--       	<a href="#" class="meta-chat" target="_blank"><span class="icon-heart"></span> 16</a>-->
+	         <!--       </p>-->
+          <!--      </div>-->
+          <!--      <h3 class="heading"><a href="https://www.oduyemi.hashnode.dev/ai-generated-marketing-content" target="_blank">The Future of the Web is Marketing Copy Generated by Algorithms</a></h3>-->
+          <!--      <p>It is safe to say that we have arrived at the point where more areas of our lives are being controlled by algorithms. It is no secret that digital marketing is becoming increasingly dependent on these algorithms for effective copywriting.</p>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--</div>-->
+          <!--<div class="col-md-4 d-flex ftco-animate">-->
+          <!--	<div class="blog-entry">-->
+          <!--    <a href="https://www.hopyrane.oduyemi.dev/web-development-roles-for-beginners" target="_blank" class="block-20" style="background-image: url('static/images/OOwDlqkso.avif');">-->
+          <!--    </a>-->
+          <!--    <div class="text mt-3 float-right d-block">-->
+          <!--    	<div class="d-flex align-items-center mb-3 meta">-->
+	         <!--       <p class="mb-0">-->
+	         <!--       	<span class="mr-2">May 06, 2022</span>-->
+	         <!--       	<a href="#" class="mr-2" target="_blank">Yemi</a>-->
+	         <!--       	<a href="#" class="meta-chat"><span class="icon-heart" target="_blank"></span> 34 <span class="icon-chat"></span> 1</a>-->
+	         <!--       </p>-->
+          <!--      </div>-->
+          <!--      <h3 class="heading"><a href="https://www.hopyrane.hashnode.dev/web-development-roles-for-beginners" target="_blank">Web Development Roles for Beginners</a></h3>-->
+          <!--      <p>Being a web developer is one of the most interesting career paths. Especially when you have a background in computer science. Why? Because it is a fine blend of analytical and technical skills and creative design and development. However,...</p>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--</div>-->
         </div>
       </div>
     </section>
@@ -418,7 +520,7 @@
           			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Github</h3>
-	            <p><a href="github.com/oduyemi">@oduyemi</a></p>
+	            <p><a href="https://github.com/oduyemi">@oduyemi</a></p>
 	          </div>
           </div>
         </div>
@@ -512,7 +614,7 @@
         </div>
       </div>
     </section>
-		
+	{% endblock %}
 
     <footer class="ftco-footer ftco-section">
       <div class="container">
@@ -520,10 +622,10 @@
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">About</h2>
-              <p>Frontend Web Application developer and a side project addict. I turn ideas into real life products.</p>
+              <p>Fullstack Web Application developer and a side project addict. I turn ideas into real life products.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="www.twitter.com/hopyrane"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="www.instagram.com/hopyrane"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.twitter.com/hopyrane"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/hopyrane"><span class="icon-instagram"></span></a></li>
               </ul>
             </div>
           </div>
@@ -533,7 +635,7 @@
               <ul class="list-unstyled">
                 <li><a href="#home"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
                 <li><a href="#about"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-                <li><a href="#project"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+                <li><a href="#projects"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
                 <li><a href="#contact"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
               </ul>
             </div>
@@ -542,8 +644,9 @@
              <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Services</h2>
               <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design &amp;<br>Development</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Application Development</a></li>
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Frontend<br>Engineering</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Backend<br>Engineering</a></li>
 
 
               </ul>
@@ -555,8 +658,8 @@
             	<div class="block-23 mb-3">
 	              <ul>
 	                <li><span class="icon icon-map-marker"></span><span class="text">Olorunfunmi Street, Gbagada, Lagos</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+234 816 633 6187</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">support@yemi.dev</span></a></li>
+	                <li><a href="tel:2348166336187"><span class="icon icon-phone"></span><span class="text">+234 816 633 6187</span></a></li>
+	                <li><a href="mailto:support@yemi.com"><span class="icon icon-envelope"></span><span class="text">support@yemi.dev</span></a></li>
 	              </ul>
 	            </div>
             </div>

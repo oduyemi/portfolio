@@ -2,8 +2,6 @@ from flask import render_template,request,redirect,session,url_for
 from sqlalchemy.sql import text
 from werkzeug.security import generate_password_hash,check_password_hash
 from portfolio_app import starter, db
-from wtforms import StringField, PasswordField, SubmitField, TextAreaField
-from wtforms.validators import DataRequired, length, ValidationError, Regexp, Email
 from werkzeug.exceptions import HTTPException
 from portfolio_app.models import Msg, Admin
 from portfolio_app.form import LoginForm, AdminMessage

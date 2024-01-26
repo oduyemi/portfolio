@@ -28,3 +28,19 @@ def home():
             flash('You must fill the form correctly to signup', "danger")
 
  
+
+@starter.route("/projects", methods= ["GET"], strict_slashes = False)
+def projects():
+    return render_template("user/projects.html")
+
+@starter.route("/projects/collaborations", methods= ["GET"], strict_slashes = False)
+def collabo():
+    return render_template("user/collabo.html")
+
+@starter.route("/projects/works", methods= ["GET"], strict_slashes = False)
+def works():
+    return render_template("user/inprogress.html")
+
+@starter.route("/projects/demo", methods= ["GET"], strict_slashes = False)
+def toy():
+    return render_template("user/toy.html")

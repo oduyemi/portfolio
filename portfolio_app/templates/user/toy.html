@@ -1,0 +1,206 @@
+{% extends "user/index.html" %}
+{% block hero %}
+<section class="hero-wrap js-fullheight d-md-block d-none" style="background-image: url('../../static/images/project_hero.jpg');" data-stellar-background-ratio="0.5">    <div class="overlay"></div>
+  <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+        <div class="col-md-12 ftco-animate pb-5 mb-3 text-center">
+          <h1 class="mb-3 bread">Toy Projects</h1>
+          <p class="breadcrumbs"><span class="mr-2"><a href="./">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="/projects">Projects <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="/projects/demo">Demo</a></span> </p>
+        </div>
+      </div>
+    </div>
+  </section>
+{%endblock%}
+{% block content %}
+<!-- mobile topbar -->
+<section class="mobile_bar">
+  <div class="col-lg-4 mobile_bar d-block d-md-none sidebar ftco-animate">
+    <!-- <div class="sidebar-box">
+      <form action="#" class="search-form">
+        <div class="form-group">
+          <span class="icon icon-search"></span>
+          <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
+        </div>
+      </form>
+    </div> -->
+    <div class="sidebar-box ftco-animate">
+        <h3 class="heading-sidebar text-primary">Categories</h3>
+      <ul class="categories">
+        <li><a href="/projects">Deployed <span>(15)</span></a></li>
+        <li><a href="/projects/demo">Toy Projects/demo <span>(10)</span></a></li>
+        <li><a href="/projects/collaborations">Collaborations <span>(5)</span></a></li>
+        <li><a href="/projects/works">In Progress <span>(10)</span></a></li>
+      </ul>
+    </div>
+  
+    <div class="sidebar-box ftco-animate">
+      <h3 class="heading-sidebar text-primary">Toy Projects</h3>
+      <p>I refer to this category as Toy or Demo projects because they hardly ever leave my GitHub repository. The goal here is to keep taking up such projects in practice.</p>
+    </div>
+  </div>
+  </section>
+<section class="ftco-section">
+  <div class="container">
+    <div class="row">
+        <!-- Project 1: Chow -->
+        <div class="col-md-8">
+            <h2 class="mb-3 text-center">The Chow App</h2>
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(../../static/images/toy/chow.jpg);"></div>
+        <div class="col-md-12 ftco-animate">
+          <p>Restaurant</p>
+          <p>A web application for Chow Restaurant that allows users to order meals and access all other services offered by the restaurant.</p>
+          <div class="text-center my-5">
+              <a href="https://github.com/oduyemi/chow" target="_blank" class="btn btn-primary py-3 px-5">See Code</a>
+          </div>
+        </div> 
+      </div>
+
+        <!-- Project 2: Techie -->
+        <div class="col-md-8">
+            <h2 class="mb-3 text-center">Techie</h2>
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(../../static/images/toy/techie.jpg);"></div>
+            <div class="col-md-12 ftco-animate">
+              <p>Blog</p>
+              <p>A multiple user blogging application. The fundamental concept is that anyone visiting the website should be able to read a blog post written by them or another user because the app has a landing page that lists a variety of articles written by different authors.Erekere is a Nigerian tour operating company that promotes African tourism and connects people. We organise group tours, school excursions, corporate retreats, holiday packages and also offer tour guide services within Africa, to educate people about the beauty within. We organise affordable tours to encourage Nigerians and even foreigners to explore our rich and diverse cultural heritage as well as our enthralling and beautiful landscapes.</p>
+              <div class="text-center my-5">
+                  <a href="https://github.com/oduyemi/techie" target="_blank" class="btn btn-primary py-3 px-5">See Code</a>
+              </div>
+            </div>
+          </div> 
+
+        <!-- Project 3: Schedula -->
+        <div class="col-md-8">
+            <h2 class="mb-3 text-center">Schedula</h2>
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(../../static/images/toy/shcedula.jpg);"></div>
+            <div class="col-md-12 ftco-animate">
+              <p>to-do application</p>
+              <p>A to-do web application with CRUD functionalities built with HTML, CSS/Bootstrap, JavaScript, Python Flask, and MySQL database.</p>
+              <div class="text-center my-5">
+                  <a href="https://github.com/oduyemi/schedula" target="_blank" class="btn btn-primary py-3 px-5">See Code</a>
+              </div>
+            </div>
+          </div> 
+
+        <!-- Project 4: Funds -->
+        <div class="col-md-8">
+          <h2 class="mb-3 text-center">Funds App</h2>
+          <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(../../static/images/toy/funds.png);"></div>
+          <div class="col-md-12 ftco-animate">
+            <p>Fin Tech</p>
+            <p>Web Application that allows businesses pitch so they can get investors. It also allows NGOs solicit for funds.</p>
+            <div class="text-center my-5">
+                <a href="https://github.com/oduyemi/funds" target="_blank" class="btn btn-primary py-3 px-5">See Code</a>
+            </div>
+          </div> 
+        </div>
+
+        <!-- Project 5: ChopBeta -->
+        <div class="col-md-8">
+          <h2 class="mb-3 text-center">Chop Beta</h2>
+          <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(../../static/images/toy/chopbeta.jpg);"></div>
+          <div class="col-md-12 ftco-animate">
+            <p>Food-seller application</p>
+            <p>A React web application for ChopBeta. The unique food plug that lets connects and trade home-made foods.</p>
+            <div class="text-center my-5">
+                <a href="https://github.com/oduyemi/chopbeta" target="_blank" class="btn btn-primary py-3 px-5">See Code</a>
+            </div>
+          </div> 
+        </div>
+
+        <!-- Project 6: Auth Flow -->
+        <div class="col-md-8">
+          <h2 class="mb-3 text-center">Auth Flow</h2>
+          <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(../../static/images/toy/authflow.jpg);"></div>
+          <div class="col-md-12 ftco-animate">
+            <p>Authentication</p>
+            <p>A user authentication system with Python FastAPI and MySQL</p>
+            <div class="text-center my-5">
+                <a href="https://github.com/oduyemi/authFlow" target="_blank" class="btn btn-primary py-3 px-5">See Code</a>
+            </div>
+          </div>
+        </div> 
+
+        <!-- Project 7: todo -->
+        <div class="col-md-8">
+          <h2 class="mb-3 text-center">todo</h2>
+          <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(../../static/images/toy/todo.jpg);"></div>
+          <div class="col-md-12 ftco-animate">
+            <p>to-do application</p>
+            <p>A to-do web application with basic Java Spring framework using Thymeleaf</p>
+            <div class="text-center my-5">
+                <a href="https://github.com/oduyemi/todo" target="_blank" class="btn btn-primary py-3 px-5">See Code</a>
+            </div>
+          </div>
+        </div> 
+
+        <!-- Project 8: Vortex -->
+        <div class="col-md-8">
+          <h2 class="mb-3 text-center">Vortex</h2>
+          <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(../../static/images/toy/vortex.jpg);"></div>
+          <div class="col-md-12 ftco-animate">
+            <p>YouTube Video Downloader</p>
+            <p>YouTube Video Downloader built with React JS, JavaScript, Tailwindcss, Node JS and Express</p>
+            <div class="text-center my-5">
+                <a href="https://github.com/oduyemi/vortex" target="_blank" class="btn btn-primary py-3 px-5">See Code</a>
+            </div>
+          </div>
+        </div> 
+
+        <!-- Project 9: Brite Batch -->
+        <div class="col-md-8">
+          <h2 class="mb-3 text-center">Brite Batch</h2>
+          <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(../../static/images/toy/brite.jpeg);"></div>
+          <div class="col-md-12 ftco-animate">
+            <p>Rest API(Brite Batch) and other projects in the #100daysofcode in Java series </p>
+            <p>BriteBatch is an inventory management API designed to handle batches of products efficiently. It is built using Java Spring Boot and utilizes a MySQL database for data storage. This documentation provides detailed information on how to integrate and interact with the BriteBatch API.</p>
+            <div class="text-center my-5">
+                <a href="https://github.com/oduyemi/britebatch" target="_blank" class="btn btn-primary py-3 px-5">See Code</a>
+            </div>
+          </div>
+        </div> 
+
+         <!-- Project 10: Brite Batch -->
+         <div class="col-md-8">
+          <h2 class="mb-3 text-center">Brite Batch</h2>
+          <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(../../static/images/toy/brite.jpeg);"></div>
+          <div class="col-md-12 ftco-animate">
+            <p>Rest API(Brite Batch) and other projects in the #100daysofcode in Java series </p>
+            <p>BriteBatch is an inventory management API designed to handle batches of products efficiently. It is built using Java Spring Boot and utilizes a MySQL database for data storage. This documentation provides detailed information on how to integrate and interact with the BriteBatch API.</p>
+            <div class="text-center my-5">
+              <a href="https://github.com/oduyemi/britebatch" target="_blank" class="btn btn-primary py-3 px-5">See Code</a>
+            </div>
+          </div>
+      </div> 
+
+         <!-- Sidebar -->
+         <div class="col-lg-4 sidebar ftco-animate d-md-block d-none position-absolute" style="top: 50px; right:0;">
+          <!-- <div class="sidebar-box">
+            <form action="#" class="search-form">
+              <div class="form-group">
+                <span class="icon icon-search"></span>
+                <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
+              </div>
+            </form>
+          </div> -->
+
+          <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar text-primary">Categories</h3>
+            <ul class="categories">
+              <li><a href="/projects">Deployed <span>(15)</span></a></li>
+              <li><a href="/projects/demo">Toy Projects/demo <span>(10)</span></a></li>
+              <li><a href="/projects/collaborations">Collaborations <span>(5)</span></a></li>
+              <li><a href="/projects/works">In Progress <span>(10)</span></a></li>
+            </ul>
+          </div>
+            
+          <div class="sidebar-box ftco-animate">
+            <h3 class="heading-sidebar text-primary">Toy Projects</h3>
+            <p>I refer to this category as Toy or Demo projects because they hardly ever leave my GitHub repository. The goal here is to keep taking up such projects in practice.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+{%endblock%}

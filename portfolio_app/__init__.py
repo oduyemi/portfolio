@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 #from portfolio_app import config
-from flask_mail import Mail, Message
+# from flask_mail import Mail, Message
 
 
 starter = Flask(__name__,instance_relative_config=True)
